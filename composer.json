@@ -1,0 +1,15 @@
+{
+    "name": "code-creeper/respondo",
+    "description": "This is a simple package containing a simple trait for json response with specific formate.",
+    "license": "MIT",
+    "require": {
+        "php": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeCreeper\\Respondo\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
