@@ -3,7 +3,7 @@
     "description": "This is a simple package containing a simple trait for json response with specific formate.",
     "license": "MIT",
     "require": {
-        "php": ">=5.4",
+        "php": "^8.1",
         "illuminate/http": ">=6.0"
     },
     "autoload": {

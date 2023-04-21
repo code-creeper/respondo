@@ -2,9 +2,11 @@
 
 namespace CodeCreeper\Respondo;
 
+use Illuminate\Http\JsonResponse;
+
 trait ResponseMethods
 {
-    protected function sendError($errorMessages = 'Something went wrong, internal server error.', $code = 500, $result = [])
+    protected function sendError(string $errorMessages = 'Something went wrong, internal server error.', int $code = 500, array $result = []): JsonResponse
     {
         $response = [
             'metadata' => [
@@ -16,7 +18,7 @@ trait ResponseMethods
         return response()->json($response, $code);
     }
 
-    protected function sendResponse($result, $message = '', $code = 200)
+    protected function sendResponse(array $result, string $message = '', int $code = 200): JsonResponse
     {
         $response = [
             'metadata' => [
